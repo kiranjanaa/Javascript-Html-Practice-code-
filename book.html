@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Document</title>
+      <script>
+        let t1={
+                travelsid:101,
+                travelsname:"vrl",
+                bookings:[]
+        };
+        let book=function(pname,seatno)
+        {
+            console.log(`${pname} book seat in ${this.travelsname} travels with seat no ${seatno}`);
+        };
+        book.call(t1,"kirankumar",46);
+        book.apply(t1,["kiran",23]);
+        let b=book.bind(t1,"kiran");
+        b(27);
+        b(38);
+
+      </script>
+</head>
+<body>
+    
+</body>
+</html>

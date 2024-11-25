@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        .items
+        {
+            border: 2px solid black;
+            height: 120px ;
+            width: 120px;
+            top: 0px;
+            position: absolute;
+            margin-left: 200px;
+            transition:all 1s linear 0s;
+        }
+        .container{
+            position: relative;
+            left:300px;
+            top:150px;
+        }
+        .one{
+            background-color:aqua;
+            }
+        .two{
+            background-color: bisque;
+        }
+        .three{
+            background-color: blueviolet;
+        }
+        .four{
+            background-color: blue;
+        }
+        .container:hover .one{
+            transform:translateX(170px);
+        }
+        .container:hover .two{
+            transform:translateY(180px);
+        }
+        .container:hover .three{
+            transform:translateX(-180px);
+        }
+        .container:hover .four{
+            transform:translateY(-180px);
+        }
+        
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items one">1</div>
+        <div class="items two">2</div>
+        <div class="items three">3</div>
+        <div class="items four">4</div>
+    </div>
+</body>
+</html>
